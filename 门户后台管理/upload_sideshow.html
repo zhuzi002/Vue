@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>轮播图管理-轮播图上传</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <meta content="" name="description" />
+
+    <meta content="" name="author" />
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+    <link href="css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" href="css/style.default.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-fileupload.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.gritter.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/chosen.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/select2_metro.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/clockface.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/timepicker.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/colorpicker.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-toggle-buttons.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/datetimepicker.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/multi-select-metro.css" />
+
+    <link href="css/bootstrap-modal.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/select2_metro.css" />
+
+    <link rel="stylesheet" href="css/DT_bootstrap.css" />
+
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- 上传图片样式 -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/imgUp.css">
+
+    <!-- 进行修改的样式 -->
+    <link rel="stylesheet" type="text/css" href="css/lemChange.css">
+    <link rel="stylesheet" type="text/css" href="css/kingChange.css">
+
+    <link rel="shortcut icon" href="image/favicon.ico" />
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+    <!-- BEGIN HEADER -->
+
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+
+        <!-- BEGIN TOP NAVIGATION BAR -->
+
+        <div class="navbar-inner">
+
+            <div class="container-fluid">
+
+                <!-- BEGIN LOGO -->
+
+                <a class="brand" href="index.html">
+
+                    <img src="image/logo.png" alt="logo"/>
+
+                </a>
+                <span class="cwhite menhu">门户App后台管理</span>
+
+                <!-- END LOGO -->
+
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+                <!-- <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+                    <img src="image/menu-toggler.png" alt="" />
+
+                </a> -->
+
+                <!-- END RESPONSIVE MENU TOGGLER -->
+
+                <!-- BEGIN TOP NAVIGATION MENU -->
+
+                <ul class="nav pull-right">
+
+                    <!-- BEGIN TODO DROPDOWN -->
+
+                    <li class="dropdown" id="header_task_bar">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+                        <i class="icon-tasks"></i>
+
+                        <span class="badge">5</span>
+
+                        </a>
+
+                    </li>
+
+                    <!-- END TODO DROPDOWN -->
+
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+
+                    <li class="user">
+                        <span class="cwhite">管理员：</span><span class="cwhite">红红</span>
+                    </li>
+
+                    <li>
+                        <a href="changePasswor.html">修改密码</a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">退出</a>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+
+                </ul>
+
+                <!-- END TOP NAVIGATION MENU -->
+
+            </div>
+
+        </div>
+
+        <!-- END TOP NAVIGATION BAR -->
+
+    </div>
+
+
+    <!-- END HEADER -->
+
+    <!-- BEGIN CONTAINER -->
+
+    <div class="page-container row-fluid">
+
+        <!-- BEGIN SIDEBAR -->
+
+        <div class="page-sidebar nav-collapse collapse">
+
+            <!-- BEGIN SIDEBAR MENU -->
+
+            <ul class="page-sidebar-menu">
+
+                <li class="start">
+
+                    <a href="index.html">
+
+                        <i class="icon-home"></i>
+
+                        <span class="title">首页</span>
+
+                        <!-- <span class="selected"></span> -->
+
+                    </a>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-cogs"></i>
+
+                        <span class="title">会员管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="userList.html">
+
+                                用户会员</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-bookmark-empty"></i>
+
+                        <span class="title">资讯管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="messageList.html">
+
+                                资讯列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="upload_information.html">
+
+                                资讯上传</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-table"></i>
+
+                        <span class="title">标签管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="labelDefinition.html">
+
+                                标签自定义</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-briefcase"></i>
+
+                        <span class="title">轮播图管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="slideshow.html">
+                                轮播图列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="upload_sideshow.html">
+                                轮播图上传</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-user"></i>
+
+                        <span class="title">用户管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="userTickling.html">
+
+                                用户反馈</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-columns"></i>
+
+                        <span class="title">公告管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="gatheringPostings.html">
+
+                                平台公告</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="afficheIssue.html">
+
+                                发布公告</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="pushManage.html">
+
+                                推送管理</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-th"></i>
+
+                        <span class="title">权限管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="adminList.html">
+
+                                管理员列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="permissionAdmin.html">
+
+                                编辑管理角色</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+            </ul>
+
+            <!-- END SIDEBAR MENU -->
+
+        </div>
+
+        <!-- END SIDEBAR -->
+
+        <!-- BEGIN PAGE -->
+
+        <div class="page-content">
+
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+            <!-- <div id="portlet-config" class="modal hide">
+
+                <div class="modal-header">
+
+                    <button data-dismiss="modal" class="close" type="button"></button>
+
+                    <h3>portlet Settings</h3>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Here will be a configuration form</p>
+
+                </div>
+
+            </div> -->
+
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+            <!-- BEGIN PAGE CONTAINER-->
+
+            <div class="container-fluid">
+
+                <!-- BEGIN PAGE HEADER-->
+
+                <div class="row-fluid">
+
+                    <div class="span12">
+
+                        <ul class="breadcrumb">
+
+                            <li>
+
+                                <i class="icon-home"></i>
+
+                                <a href="index.html">首页</a>
+
+                                <i class="icon-angle-right"></i>
+
+                            </li>
+
+                            <li><a href="upload_sideshow.html">轮播图上传</a></li>
+
+                        </ul>
+                        <div class="back">
+                            <button class="btn blue" onclick="javascript:history.go(-1);">返回</button>
+                        </div>
+
+                        <!-- END PAGE TITLE & BREADCRUMB-->
+
+                    </div>
+
+                </div>
+
+                <!-- END PAGE HEADER-->
+
+                <!-- BEGIN PAGE CONTENT-->
+
+                <div class="row-fluid">
+
+                    <div class="span12">
+                        <div class="portlet box blue tabbable">
+                            <div class="portlet-title"></div>
+                            <div class="portlet-body form">
+
+                                <div class="tabbable portlet-tabs">
+                                    <div class="tab-content sideshowBox">
+
+                                        <div class="tab-pane active" id="portlet_tab1">
+
+                                            <!-- BEGIN FORM-->
+
+                                            <form action="" class="form-horizontal" id="uploadForm" method="post" enctype="multipart/form-data">
+
+                                                <div class="upload_box">
+                                                    <div class="control-group">
+
+                                                        <label class="control-label">轮播展位:</label>
+
+                                                        <div class="controls positionId">
+
+                                                            <label class="radio">
+
+                                                            <input type="radio" name="positionId" class="showPlace" value="1" />
+
+                                                            a1
+
+                                                            </label>
+
+                                                            <label class="radio">
+
+                                                            <input type="radio" name="positionId" class="showPlace" value="2"  />
+
+                                                            a2
+
+                                                            </label>
+                                                            <label class="radio">
+
+                                                            <input type="radio" name="positionId" class="showPlace" value="3"  />
+
+                                                            a3
+
+                                                            </label>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="control-group">
+
+                                                        <label class="control-label">标题:</label>
+
+                                                        <div class="controls">
+
+                                                            <input class="titleContent" name="title" type="text" placeholder="标题不能超过20字" class="m-wrap large" maxlength="20"/>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="control-group">
+
+                                                        <label class="control-label">类型:</label>
+
+                                                        <div class="controls genreBox">
+
+                                                            <select class="medium m-wrap" name="typeId" tabindex="1">
+
+                                                                <option value="1">视频</option>
+
+                                                                <option value="2">热门推荐</option>
+
+                                                            </select>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="control-group coverBox">
+
+                                                        <label class="control-label">图片:</label>
+
+                                                        <div class="controls">
+                                                            <div class="img-box full">
+                                                                <section class=" img-section">
+                                                                    <div class="z_photo upimg-div clear" >
+                                                                        <section class="z_file fl">
+                                                                            <img src="images/a11.png" class="add-img">
+                                                                            <input type="file" name="img" id="file" class="file" accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                                                                        </section>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="control-group activity">
+
+                                                        <div class="control-label">
+
+                                                            <select class="medium m-wrap linkType" name="linkType" tabindex="1">
+
+                                                                <option value="1">资讯</option>
+
+                                                                <option value="2">活动URL</option>
+
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="offset1 control-group activity">
+                                                            <input type="text" name="linkAddress" class="linkAddress">
+
+                                                        </div>
+                                                        <div class="controls linkInfo">
+
+                                                            <select class="span3 select2_category linkInfoId"  data-placeholder="资讯查找" tabindex="1">
+
+                                                                    <!--<option value=""></option>-->
+
+                                                                    <!--<option value="Category 1">Category 1</option>-->
+
+                                                                    <!--<option value="Category 2">Category 2</option>-->
+
+                                                                    <!--<option value="Category 3">Category 3</option>-->
+
+                                                                    <!--<option value="Category 4">Category 4</option>-->
+
+                                                                </select>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-actions">
+                                                    <button type="button" class="btn blue clientPreview">客户端预览</button>
+
+                                                    <button type="button" class="btn blue"><i class="icon-ok"></i> 保存</button>
+
+                                                    <button type="button" class="btn blue put"><i class="icon-upload icon-white"></i> 上传</button>
+
+                                                </div>
+
+                                            </form>
+
+                                            <!-- END FORM-->
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- END PAGE CONTENT-->
+
+            </div>
+
+            <!-- END PAGE CONTAINER-->
+
+        </div>
+
+        <!-- END PAGE -->
+
+    </div>
+    <aside class="mask works-mask">
+        <div class="mask-content">
+            <p class="del-p ">您确定要删除作品图片吗？</p>
+            <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+        </div>
+    </aside>
+    <div class="black_overlay"></div>
+    <div class="Popup_unfreeze">
+        <ul>
+            <li><span>是否确认上传?</span></li>
+            <li>
+                <button type="submit" class="btn blue confirm">确定</button>
+                <button class="btn blue clear">取消</button>
+            </li>
+        </ul>
+    </div>
+    <div class="phonePreview">
+        <a href="javascript:;" class="cancel"></a>
+        <div class="previewChoose left">
+            <p>预览机型选择:</p>
+            <ul>
+                <li><input type="radio" name="phoneView" value=""/>iPhone 7</li>
+                <li><input type="radio" name="phoneView" value=""/>三星</li>
+                <li><input type="radio" name="phoneView" value=""/>iPhone 7s</li>
+                <li><input type="radio" name="phoneView" value=""/>oppo r11</li>
+                <li><input type="radio" name="phoneView" value=""/>iPhone 6</li>
+                <li><input type="radio" name="phoneView" value=""/>华为</li>
+                <li><input type="radio" name="phoneView" value=""/>iPhone 6s</li>
+                <li><input type="radio" name="phoneView" value=""/>魅族</li>
+                <li><input type="radio" name="phoneView" value=""/>iPhone 5</li>
+                <li><input type="radio" name="phoneView" value=""/>小米</li>
+                <li><input type="radio" name="phoneView" value=""/>iPhone 5s</li>
+            </ul>
+        </div>
+        <div class="viewBox right">
+            <h1></h1>
+            <div class="showImg"></div>
+        </div>
+    </div>
+
+    <!-- END CONTAINER -->
+
+
+
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+    <!-- BEGIN CORE PLUGINS -->
+
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <!--<script src="js/imgPlugin.js"></script>-->
+    <script src="js/imgUp.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <!-- <script src="js/jquery-1.7.min.js"></script> -->
+    <!-- <script src="js/jquery-ui-1.8.16.custom.min.js"></script> -->
+
+    <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+    <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+    <script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+
+    <script src="js/excanvas.min.js"></script>
+
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+
+    <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.cookie.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script type="text/javascript" src="js/ckeditor.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap-fileupload.js"></script>
+
+    <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/select2.min.js"></script>
+
+    <script type="text/javascript" src="js/wysihtml5-0.3.0.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap-wysihtml5.js"></script>
+
+    <script type="text/javascript" src="js/jquery.tagsinput.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.toggle.buttons.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+
+    <script type="text/javascript" src="js/clockface.js"></script>
+
+    <script type="text/javascript" src="js/date.js"></script>
+
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap-colorpicker.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
+
+    <script type="text/javascript" src="js/jquery.inputmask.bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.input-ip-address-control-1.0.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.multi-select.js"></script>
+
+    <script src="js/bootstrap-modal.js" type="text/javascript" ></script>
+
+    <script src="js/bootstrap-modalmanager.js" type="text/javascript" ></script>
+
+    <script src="js/jquery.ui.widget.js"></script>
+
+    <script src="js/jquery.iframe-transport.js"></script>
+
+    <script src="js/jquery.fileupload.js"></script>
+
+    <script src="js/jquery.xdr-transport.js"></script>
+
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+    <script src="js/app.js"></script>
+    <script src="js/form-samples.js"></script>
+    <!-- 编辑器 -->
+    <script type="text/javascript" charset="utf-8" src="utf8-jsp/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="utf8-jsp/ueditor.all.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="utf8-jsp/lang/zh-cn/zh-cn.js"></script>
+
+    <!-- <script src="js/table-managed.js"></script> -->
+    <!-- <script language="javascript" type="text/javascript" src="js/plugins/My97DatePicker/WdatePicker.js"></script> -->
+
+    <script>
+
+        $(document).ready(function() {
+
+            App.init();
+
+            FormSamples.init();
+            var userId = localStorage.getItem("userId");
+
+            $('.form-actions .put').click(function () {
+                $(".black_overlay").css("display", "block");
+                $(".Popup_unfreeze").css("display", "block");
+            });
+            $(".confirm").click(function () {
+                $("#password-data").text('000000');
+                $(".black_overlay").css("display", "none");
+                $(".Popup_unfreeze").css("display", "none");
+            })
+            $(".clear").click(function () {
+                $(".black_overlay").css("display", "none");
+                $(".Popup_unfreeze").css("display", "none");
+            });
+
+            // 上传图片切换
+            // console.log($(".coverBox input[name='option2']").attr("checked") == true);
+            $(".coverBox input").change(function () {
+                if ($(this).val("option2").is(":checked")) {
+                    $(".full").width(650);
+                } else if ($(this).val("option1").is(":checked")) {
+                    $(".full").width(210);
+                }
+            });
+            // 文章标签
+            $(".chzn-drop .group-option").click(function () {
+                console.log("1111");
+                if ($("chzn-choices").find(".search-choice").length = 1) {
+                    console.log("2222");
+                    $(".chzn-drop").addClass("hide");
+                } else if ($("chzn-choices").find(".search-choice").length = 0) {
+                    $(".chzn-drop").removeClass('hide');
+                }
+                ;
+                $(".search-choice-close").click(function () {
+                    $(".chzn-drop").removeClass('hide');
+                });
+//                 $(".search-field input").blur(function(){
+//                     $(".chzn-drop").addClass("hide");
+//                 });
+//                 $(".search-field input").focus(function(){
+//                     $(".chzn-drop").removeClass('hide');
+//                 });
+            });
+
+            $.ajax({
+                url: 'http://101.37.85.231:8081/informationControl/searchInformationWeb',
+                type: 'POST',
+                dataType: 'json',
+                success:function(result) {
+                    var str = "";
+                    for(var i=0;i<result.data.pageData.length;i++){
+                        str += '<option value="' + result.data.pageData[i].id +'" class="' + 'hide">' + result.data.pageData[i].title + '</option>'
+                    }
+                    $('.linkInfo .linkInfoId').append(str);
+
+
+                },
+                error: function(){
+                    console.log('0000error');
+                }
+            });
+
+            /* 修改 */
+            var id = $.getUrlParam("id");
+
+            if (id) {
+                jQuery.post(
+                    'http://101.37.85.231:8081/banner/getBannerList',
+                    {
+                        id: id
+                    },
+                    function (result) {
+                        console.log(result);
+                        //图片位置
+                        if (result.data.pageData[id-1].showpostoin == "a1") {
+                            $('.positionId input[value="1"]').parent().addClass('checked');
+                        }
+                        else if (result.data.pageData[id-1].showpostoin == "a2") {
+                            $('.positionId input[value="2"]').parent().addClass('checked');
+                        }
+                        else if (result.data.pageData[id-1].showpostoin == "a3") {
+                            $('.positionId input[value="3"]').parent().addClass('checked');
+                        }
+                        //标题
+                        $(".titleContent").val(result.data.pageData[id-1].title);
+
+                        //类型
+                        if (result.data.pageData[id-1].linktype == "资讯") {
+                            $('.medium').attr('value', '1');
+                        }
+                        else if (result.data.pageData[id-1].linktype == "活动URL") {
+                            $('.medium').attr('value', '2');
+                        }
+
+                        //图片内容
+                        var picture = "";
+                        if (!result.data.pageData[id].url) {
+                            console.log("no picture");
+                        } else {
+                            picture += '<section class="up-section fl"><span class="up-span"></span><img class="close-upimg" src="images/a7.png"><img class="up-img" src="' + result.data.pageData[id-1].url + '"><p class="img-name-p">ic_default_head@3x.png</p><input id="taglocation" name="taglocation" value="" type="hidden"><input id="tags" name="tags" value="" type="hidden"></section>';
+
+                            $('div.z_photo').prepend(picture);
+                        }
+
+                    },
+                    "json"
+                )
+            }
+
+            //上传轮播图
+            jQuery(".confirm").click(function () {
+
+                var formData = new FormData($("#uploadForm")[0]);
+                formData.delete("tags");
+                formData.delete("taglocation");
+                console.log(formData.get("img"));
+
+                if (id) {
+                    if($(".linkType option:selected").val() == 1){
+                        var linkInfoId = $(".linkInfoId option:selected").val();
+                        formData.append("linkInfoId",linkInfoId);
+                        formData.delete("linkAddress");
+                    }
+                    else if($(".linkType option:selected").val() == 2){
+                        formData.delete("linkInfoId");
+                    }
+                    formData.append("bannerId",id);
+                    formData.delete("linkType");
+                    $.ajax({
+                        url: 'http://101.37.85.231:8081/banner/editBanner',
+                        type: 'POST',
+                        dataType: "json",
+                        data: formData,
+                        async: false,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (result) {
+                            console.log(result);
+                        },
+                        error: function () {
+                            console.log("上传失败");
+                        }
+                    });
+                }
+                else{
+                    if($(".linkType option:selected").val() == 1){
+                        var linkInfoId = $(".linkInfoId option:selected").val();
+                        formData.append("linkInfoId",linkInfoId);
+                        formData.delete("linkAddress");
+                    }
+                    else if($(".linkType option:selected").val() == 2){
+                        formData.delete("linkInfoId");
+                    }
+                    formData.append("userId",userId);
+                    $.ajax({
+                        url: 'http://101.37.85.231:8081/banner/uploadImg',
+                        type: 'POST',
+                        dataType: "json",
+                        data: formData,
+                        async: false,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (result) {
+                            if(result.msg =="上传成功"){
+                                console.log(result.msg);
+                                location.href = "slideshow.html";
+                            }
+                        },
+                        error: function () {
+                            console.log("上传失败");
+                        }
+                    });
+                }
+
+
+            });
+
+            // 清除input里的内容
+            $(".activity .controls i.close").click(function () {
+                $(this).siblings('input').val("");
+            });
+
+            // 客户端预览
+            $('.clientPreview').click(function () {
+                $(".black_overlay").css("display", "block");
+                $(".phonePreview").css("display", "block");
+            });
+            $('.phonePreview .cancel').click(function () {
+                $(".black_overlay").css("display", "none");
+                $(".phonePreview").css("display", "none");
+            });
+            $(".previewChoose .radio").click(function () {
+                var phoneSize;
+                phoneSize = $(this).find('.checked').parent().parent().text();
+                if (phoneSize == "iPhone 7" || phoneSize == "iPhone 6" || phoneSize == "iPhone 6s" || phoneSize == "iPhone 7s") {
+                    $(".viewBox").width(375).height(667);
+                } else if (phoneSize == "iPhone 5" || phoneSize == "iPhone 5s") {
+                    $(".viewBox").width(320).height(568);
+                } else if (phoneSize == "三星") {
+                    $(".viewBox").width(360).height(640);
+                } else if (phoneSize == "oppo r11" || phoneSize == "华为") {
+                    $(".viewBox").width(540).height(960);
+                } else if (phoneSize == "魅族" || phoneSize == "小米") {
+                    $(".viewBox").width(412).height(732);
+                }
+
+                var view = $('.viewBox');
+                var viewWidth = view.width();
+                if (viewWidth > 321 && viewWidth < 375) {
+                    view.css('font-size', '11px');
+                } else if (viewWidth > 376 && viewWidth < 415) {
+                    view.css('font-size', '12px');
+                } else if (viewWidth > 415 && viewWidth < 640) {
+                    view.css('font-size', '15px');
+                } else if (viewWidth > 640 && viewWidth < 720) {
+                    view.css('font-size', '20px');
+                } else if (viewWidth > 720 && viewWidth < 750) {
+                    view.css('font-size', '22.5px');
+                } else if (viewWidth > 750 && viewWidth < 800) {
+                    view.css('font-size', '23.5px');
+                } else if (viewWidth > 800) {
+                    view.css('font-size', '25px');
+                }
+                ;
+
+                //预览
+                $('.viewBox h1').html($('.title input').val());
+                $('.viewBox .showImg').html('<img src="'+ $(".up-img").attr("src") + '"width=100%>');
+            });
+
+
+        })
+    </script>
+
+</body>
+
+<!-- END BODY -->
+
+</html>

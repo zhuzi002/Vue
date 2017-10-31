@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>门户App后台管理</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <meta content="" name="description" />
+
+    <meta content="" name="author" />
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+    <link href="css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+
+    <!-- <link href="css/jquery.gritter.css" rel="stylesheet" type="text/css"/> -->
+
+    <link href="css/fullcalendar.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/jqvmap.css" rel="stylesheet" type="text/css" media="screen"/>
+
+    <link href="css/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+
+    <!-- END PAGE LEVEL STYLES -->
+
+    <!-- 进行修改的样式 -->
+    <link rel="stylesheet" type="text/css" href="css/lemChange.css">
+
+    <link rel="shortcut icon" href="image/favicon.ico" />
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+    <!-- BEGIN HEADER -->
+
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+
+        <!-- BEGIN TOP NAVIGATION BAR -->
+
+        <div class="navbar-inner">
+
+            <div class="container-fluid">
+
+                <!-- BEGIN LOGO -->
+
+                <a class="brand" href="index.html">
+
+                    <img src="image/logo.png" alt="logo"/>
+
+                </a>
+                <span class="cwhite menhu">门户App后台管理</span>
+
+                <!-- END LOGO -->
+
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+                <!-- <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+                    <img src="image/menu-toggler.png" alt="" />
+
+                </a> -->
+
+                <!-- END RESPONSIVE MENU TOGGLER -->
+
+                <!-- BEGIN TOP NAVIGATION MENU -->
+
+                <ul class="nav pull-right">
+
+                    <!-- BEGIN TODO DROPDOWN -->
+
+                    <li class="dropdown" id="header_task_bar">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+                        <i class="icon-tasks"></i>
+
+                        <span class="badge">5</span>
+
+                        </a>
+
+                    </li>
+
+                    <!-- END TODO DROPDOWN -->
+
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+
+                    <li class="user">
+                        <span class="cwhite">管理员：</span><span class="cwhite">红红</span>
+                    </li>
+
+                    <li>
+                        <a href="changePassword.html">修改密码</a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">退出</a>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+
+                </ul>
+
+                <!-- END TOP NAVIGATION MENU -->
+
+            </div>
+
+        </div>
+
+        <!-- END TOP NAVIGATION BAR -->
+
+    </div>
+
+    <!-- END HEADER -->
+
+
+    <!-- BEGIN CONTAINER -->
+
+    <div class="page-container">
+
+        <!-- BEGIN SIDEBAR -->
+
+        <div class="page-sidebar nav-collapse collapse">
+
+            <!-- BEGIN SIDEBAR MENU -->
+
+            <ul class="page-sidebar-menu">
+
+                <li class="start">
+
+                    <a href="index.html">
+
+                        <i class="icon-home"></i>
+
+                        <span class="title">首页</span>
+
+                        <!-- <span class="selected"></span> -->
+
+                    </a>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-cogs"></i>
+
+                        <span class="title">会员管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="userList.html">
+
+                                用户会员</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-bookmark-empty"></i>
+
+                        <span class="title">资讯管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="messageList.html">
+
+                                资讯列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="upload_information.html">
+
+                                资讯上传</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-table"></i>
+
+                        <span class="title">标签管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="labelDefinition.html">
+
+                                标签自定义</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-briefcase"></i>
+
+                        <span class="title">轮播图管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="slideshow.html">
+                                轮播图列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="upload_sideshow.html">
+                                轮播图上传</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-user"></i>
+
+                        <span class="title">用户管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="userTickling.html">
+
+                                用户反馈</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-columns"></i>
+
+                        <span class="title">公告管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="gatheringPostings.html">
+
+                                平台公告</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="afficheIssue.html">
+
+                                发布公告</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="pushManage.html">
+
+                                推送管理</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-th"></i>
+
+                        <span class="title">权限管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="adminList.html">
+
+                                管理员列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="permissionAdmin.html">
+
+                                编辑管理角色</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+            </ul>
+
+            <!-- END SIDEBAR MENU -->
+
+        </div>
+
+        <!-- END SIDEBAR -->
+
+        <!-- BEGIN PAGE -->
+        <div class="page-content">
+
+            <ul class="breadcrumb">
+
+                <li>
+
+                    <i class="icon-home"></i>
+
+                    <a href="index.html">首页</a>
+
+                    <i class="icon-angle-right"></i>
+
+                </li>
+
+                <li><a href="#">Inbox</a></li>
+
+            </ul>
+
+        </div>
+        <!-- END PAGE -->
+
+    </div>
+
+    <!-- END CONTAINER -->
+
+
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+    <!-- BEGIN CORE PLUGINS -->
+
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+    <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+    <script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+
+    <script src="js/excanvas.min.js"></script>
+
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+
+    <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.cookie.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+
+<!--     <script src="js/jquery.vmap.js" type="text/javascript"></script>
+
+    <script src="js/jquery.vmap.russia.js" type="text/javascript"></script>
+
+    <script src="js/jquery.vmap.world.js" type="text/javascript"></script>
+
+    <script src="js/jquery.vmap.europe.js" type="text/javascript"></script>
+
+    <script src="js/jquery.vmap.germany.js" type="text/javascript"></script>
+
+    <script src="js/jquery.vmap.usa.js" type="text/javascript"></script>
+
+    <script src="js/jquery.vmap.sampledata.js" type="text/javascript"></script> -->
+
+    <script src="js/jquery.flot.js" type="text/javascript"></script>
+
+    <script src="js/jquery.flot.resize.js" type="text/javascript"></script>
+
+    <script src="js/jquery.pulsate.min.js" type="text/javascript"></script>
+
+    <script src="js/date.js" type="text/javascript"></script>
+
+    <!-- <script src="js/daterangepicker.js" type="text/javascript"></script> -->
+
+    <!-- <script src="js/jquery.gritter.js" type="text/javascript"></script> -->
+
+    <script src="js/fullcalendar.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.easy-pie-chart.js" type="text/javascript"></script>
+
+    <script src="js/jquery.sparkline.min.js" type="text/javascript"></script>
+
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+    <script src="js/app.js" type="text/javascript"></script>
+
+    <script src="js/index.js" type="text/javascript"></script>
+
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+    <script>
+
+        jQuery(document).ready(function() {
+
+           App.init(); // initlayout and core plugins
+
+           Index.init();
+
+           //Index.initJQVMAP(); // init index page's custom scripts
+
+           //Index.initCalendar(); // init index page's custom scripts
+
+           //Index.initCharts(); // init index page's custom scripts
+
+           Index.initChat();
+
+           //Index.initMiniCharts();
+
+           //Index.initDashboardDaterange();
+
+           //Index.initIntro();
+
+
+        });
+
+
+    </script>
+
+    <!-- END JAVASCRIPTS -->
+
+</body>
+
+<!-- END BODY -->
+
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>公告管理-发布推送</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <meta content="" name="description" />
+
+    <meta content="" name="author" />
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+    <link href="css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" href="css/style.default.css" type="text/css" />
+   <!--  <link rel="stylesheet" type="text/css" href="css/select2_metro.css" />
+
+    <link rel="stylesheet" href="css/DT_bootstrap.css" /> -->
+
+    <!-- END PAGE LEVEL STYLES -->
+
+    <!-- 进行修改的样式 -->
+    <link rel="stylesheet" type="text/css" href="css/lemChange.css">
+    <link rel="stylesheet" type="text/css" href="css/kingChange.css">
+
+    <link rel="shortcut icon" href="image/favicon.ico" />
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+    <!-- BEGIN HEADER -->
+
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+
+        <!-- BEGIN TOP NAVIGATION BAR -->
+
+        <div class="navbar-inner">
+
+            <div class="container-fluid">
+
+                <!-- BEGIN LOGO -->
+
+                <a class="brand" href="index.html">
+
+                    <img src="image/logo.png" alt="logo"/>
+
+                </a>
+                <span class="cwhite menhu">门户App后台管理</span>
+
+                <!-- END LOGO -->
+
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+                <!-- <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+                    <img src="image/menu-toggler.png" alt="" />
+
+                </a> -->
+
+                <!-- END RESPONSIVE MENU TOGGLER -->
+
+                <!-- BEGIN TOP NAVIGATION MENU -->
+
+                <ul class="nav pull-right">
+
+                    <!-- BEGIN TODO DROPDOWN -->
+
+                    <li class="dropdown" id="header_task_bar">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+                        <i class="icon-tasks"></i>
+
+                        <span class="badge">5</span>
+
+                        </a>
+
+                    </li>
+
+                    <!-- END TODO DROPDOWN -->
+
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+
+                    <li class="user">
+                        <span class="cwhite">管理员：</span><span class="cwhite">红红</span>
+                    </li>
+
+                    <li>
+                        <a href="changePasswor.html">修改密码</a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">退出</a>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+
+                </ul>
+
+                <!-- END TOP NAVIGATION MENU -->
+
+            </div>
+
+        </div>
+
+        <!-- END TOP NAVIGATION BAR -->
+
+    </div>
+
+
+    <!-- END HEADER -->
+
+    <!-- BEGIN CONTAINER -->
+
+    <div class="page-container row-fluid">
+
+        <!-- BEGIN SIDEBAR -->
+
+        <div class="page-sidebar nav-collapse collapse">
+
+            <!-- BEGIN SIDEBAR MENU -->
+
+            <ul class="page-sidebar-menu">
+
+                <li class="start">
+
+                    <a href="index.html">
+
+                        <i class="icon-home"></i>
+
+                        <span class="title">首页</span>
+
+                        <!-- <span class="selected"></span> -->
+
+                    </a>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-cogs"></i>
+
+                        <span class="title">会员管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="userList.html">
+
+                                用户会员</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-bookmark-empty"></i>
+
+                        <span class="title">资讯管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="messageList.html">
+
+                                资讯列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="upload_information.html">
+
+                                资讯上传</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-table"></i>
+
+                        <span class="title">标签管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="labelDefinition.html">
+
+                                标签自定义</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-briefcase"></i>
+
+                        <span class="title">轮播图管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="slideshow.html">
+                                轮播图列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="pushManage.html">
+                                轮播图上传</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-user"></i>
+
+                        <span class="title">用户管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="userTickling.html">
+
+                                用户反馈</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-columns"></i>
+
+                        <span class="title">公告管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="gatheringPostings.html">
+
+                                平台公告</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="afficheIssue.html">
+
+                                发布公告</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="gatheringPostings.html">
+
+                                推送管理</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="">
+
+                    <a href="javascript:;">
+
+                        <i class="icon-th"></i>
+
+                        <span class="title">权限管理</span>
+
+                        <span class="arrow "></span>
+
+                    </a>
+
+                    <ul class="sub-menu">
+
+                        <li >
+
+                            <a href="adminList.html">
+
+                                管理员列表</a>
+
+                        </li>
+
+                        <li >
+
+                            <a href="permissionAdmin.html">
+
+                                编辑管理角色</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+            </ul>
+
+            <!-- END SIDEBAR MENU -->
+
+        </div>
+
+        <!-- END SIDEBAR -->
+
+        <!-- BEGIN PAGE -->
+
+        <div class="page-content">
+
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+            <div id="portlet-config" class="modal hide">
+
+                <div class="modal-header">
+
+                    <button data-dismiss="modal" class="close" type="button"></button>
+
+                    <h3>portlet Settings</h3>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Here will be a configuration form</p>
+
+                </div>
+
+            </div>
+
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+            <!-- BEGIN PAGE CONTAINER-->
+
+            <div class="container-fluid">
+
+                <!-- BEGIN PAGE HEADER-->
+
+                <div class="row-fluid">
+
+                    <div class="span12">
+
+                        <ul class="breadcrumb">
+
+                            <li>
+
+                                <i class="icon-home"></i>
+
+                                <a href="index.html">首页</a>
+
+                                <i class="icon-angle-right"></i>
+
+                            </li>
+
+                            <li><a href="gatheringPostings.html">推送管理</a><i class="icon-angle-right"></i></li>
+                            <li><a href="pushIssue.html">发布推送</a></li>
+
+                        </ul>
+                        <div class="back">
+                            <button class="btn blue" onclick="javascript:history.go(-1);">返回</button>
+                        </div>
+
+                        <!-- END PAGE TITLE & BREADCRUMB-->
+
+                    </div>
+
+                </div>
+
+                <!-- END PAGE HEADER-->
+
+                <!-- BEGIN PAGE CONTENT-->
+
+                <div class="row-fluid">
+
+                    <div class="span12">
+
+                        <!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+                        <div class="portlet box light-grey">
+
+                            <div class="portlet-title">
+
+                                <!-- <div class="caption"><i class="icon-globe"></i>Managed Table</div> -->
+
+                                <div class="tools">
+
+                                    <a href="javascript:;" class="collapse"></a>
+
+                                    <!-- <a href="#portlet-config" data-toggle="modal" class="config"></a> -->
+
+                                    <a href="javascript:;" class="reload"></a>
+
+                                    <a href="javascript:;" class="remove"></a>
+
+                                </div>
+
+                            </div>
+                            <div class="portlet-body form">
+
+                                <div class="tabbable portlet-tabs">
+                                    <div class="tab-content sideshowBox">
+
+                                        <div class="tab-pane active" id="portlet_tab1">
+
+                                            <!-- BEGIN FORM-->
+
+                                            <form action="#" class="form-horizontal">
+
+                                                <div class="upload_box">
+
+                                                    <div class="control-group">
+
+                                                        <label class="control-label">标题:</label>
+
+                                                        <div class="controls">
+
+                                                            <input type="text" placeholder="标题不能超过20字" class="m-wrap large" maxlength="20"/>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label class="control-label">详细内容:</label>
+                                                        <div class="controls">
+                                                            <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-actions">
+
+                                                    <button type="button" class="btn blue put"><i class="icon-ok"></i> 发布</button>
+
+                                                    <button type="button" class="btn blue"> 取消</button>
+
+                                                </div>
+
+                                            </form>
+
+                                            <!-- END FORM-->
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- END EXAMPLE TABLE PORTLET-->
+
+                    </div>
+
+                </div>
+
+                <!-- END PAGE CONTENT-->
+
+            </div>
+
+            <!-- END PAGE CONTAINER-->
+
+        </div>
+
+        <!-- END PAGE -->
+
+    </div>
+
+    <!-- END CONTAINER -->
+
+
+    <div class="black_overlay"></div>
+    <div class="Popup_unfreeze">
+        <ul>
+            <li><span>确认上传?</span></li>
+            <li>
+                <button type="submit" class="stdbtn btn_blue confirm">确定</button>
+                <button class="stdbtn btn_blue clear">取消</button>
+            </li>
+        </ul>
+    </div>
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+    <!-- BEGIN CORE PLUGINS -->
+
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <!-- <script src="js/jquery-1.7.min.js"></script> -->
+    <script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+
+    <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+    <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+    <!-- <script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> -->
+
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+
+    <script src="js/excanvas.min.js"></script>
+
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+
+    <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.cookie.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/tables.js"></script>
+
+    <!-- <script type="text/javascript" src="js/select2.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+
+    <script type="text/javascript" src="js/DT_bootstrap.js"></script> -->
+
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+    <script src="js/app.js"></script>
+
+    <!-- <script src="js/table-managed.js"></script> -->
+    <!-- <script language="javascript" type="text/javascript" src="js/plugins/My97DatePicker/WdatePicker.js"></script> -->
+    <!-- 编辑器 -->
+    <script type="text/javascript" charset="utf-8" src="utf8-jsp/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="utf8-jsp/ueditor.all.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="utf8-jsp/lang/zh-cn/zh-cn.js"></script>
+
+    <script>
+
+        jQuery(document).ready(function() {
+
+            App.init();
+            jQuery('.form-actions .put').click(function() {
+                jQuery(".black_overlay").css("display","block");
+                jQuery(".Popup_unfreeze").css("display","block");
+            });
+            jQuery(".confirm").click(function(){
+                jQuery("#password-data").text('000000');
+                jQuery(".black_overlay").css("display","none");
+                jQuery(".Popup_unfreeze").css("display","none");
+            })
+            jQuery(".clear").click(function() {
+                jQuery(".black_overlay").css("display","none");
+                jQuery(".Popup_unfreeze").css("display","none");
+            });
+
+            // 编辑器
+            var ue = UE.getEditor('editor');
+
+            ue.ready(function(){
+
+                function isFocus(e){
+                    alert(UE.getEditor('editor').isFocus());
+                    UE.dom.domUtils.preventDefault(e)
+                }
+                function setblur(e){
+                    UE.getEditor('editor').blur();
+                    UE.dom.domUtils.preventDefault(e)
+                }
+                function insertHtml() {
+                    var value = prompt('插入html代码', '');
+                    UE.getEditor('editor').execCommand('insertHtml', value)
+                }
+                function createEditor() {
+                    enableBtn();
+                    UE.getEditor('editor');
+                }
+                function getAllHtml() {
+                    alert(UE.getEditor('editor').getAllHtml())
+                }
+                function getContent() {
+                    var arr = [];
+                    arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+                    arr.push("内容为：");
+                    arr.push(UE.getEditor('editor').getContent());
+                    alert(arr.join("\n"));
+                }
+                function getPlainTxt() {
+                    var arr = [];
+                    arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+                    arr.push("内容为：");
+                    arr.push(UE.getEditor('editor').getPlainTxt());
+                    alert(arr.join('\n'))
+                }
+                function setContent(isAppendTo) {
+                    var arr = [];
+                    arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+                    UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+                    alert(arr.join("\n"));
+                }
+                function setDisabled() {
+                    UE.getEditor('editor').setDisabled('fullscreen');
+                    disableBtn("enable");
+                }
+
+                function setEnabled() {
+                    UE.getEditor('editor').setEnabled();
+                    enableBtn();
+                }
+
+                function getText() {
+                    //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+                    var range = UE.getEditor('editor').selection.getRange();
+                    range.select();
+                    var txt = UE.getEditor('editor').selection.getText();
+                    alert(txt)
+                }
+
+                function getContentTxt() {
+                    var arr = [];
+                    arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+                    arr.push("编辑器的纯文本内容为：");
+                    arr.push(UE.getEditor('editor').getContentTxt());
+                    alert(arr.join("\n"));
+                }
+                function hasContent() {
+                    var arr = [];
+                    arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+                    arr.push("判断结果为：");
+                    arr.push(UE.getEditor('editor').hasContents());
+                    alert(arr.join("\n"));
+                }
+                function setFocus() {
+                    UE.getEditor('editor').focus();
+                }
+                function deleteEditor() {
+                    disableBtn();
+                    UE.getEditor('editor').destroy();
+                }
+                function disableBtn(str) {
+                    var div = document.getElementById('btns');
+                    var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+                    for (var i = 0, btn; btn = btns[i++];) {
+                        if (btn.id == str) {
+                            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+                        } else {
+                            btn.setAttribute("disabled", "true");
+                        }
+                    }
+                }
+                function enableBtn() {
+                    var div = document.getElementById('btns');
+                    var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+                    for (var i = 0, btn; btn = btns[i++];) {
+                        UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+                    }
+                }
+
+                function getLocalData () {
+                    alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
+                }
+
+                function clearLocalData () {
+                    UE.getEditor('editor').execCommand( "clearlocaldata" );
+                    alert("已清空草稿箱")
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+<!-- END BODY -->
+
+</html>

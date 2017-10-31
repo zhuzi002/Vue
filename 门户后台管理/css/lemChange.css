@@ -1,0 +1,25 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-20 09:44:25
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-06-22 13:51:52
+*/
+.right{float: right;}
+a:hover{ text-decoration:none;}
+.container-fluid span.menhu{display: inline-block;height:40px;line-height: 40px;margin-left: -50px;}
+span.cwhite{color:#999;}
+.user{height:43px;line-height:43px;padding:0px 15px !important;}
+
+.navbar .nav>li>a{padding-top: 12px;}
+.page-container{padding-top: 15px;}
+
+.container-fluid>.row-fluid{position:relative;}
+.container-fluid>.row-fluid>.span12>div.back{position:absolute;right:0px;top:0px;}
+.clearfix{margin-bottom:10px;}
+.clearfix .btn-group{margin-bottom:0 !important;}
+.clearfix>div{display: inline-block;margin-left:20px;}
+.clearfix>.control-group>label.control-label{display: inline-block;}
+.clearfix>.control-group>div.controls{display: inline-block;}
+.clearfix .date,.clearfix .date label,.clearfix .date div{display: inline-block;}
+.clearfix .date div input{vertical-align: -2px;}
+table.stdtable>tbody>tr.gradeX>td>button>a{color:#fff;}

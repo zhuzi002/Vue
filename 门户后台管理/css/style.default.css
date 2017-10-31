@@ -1,0 +1,172 @@
+/***
+ * Created by: Mienard Lumaad
+ * Date: May 15, 2012
+ * Website: http://themepixels.com/
+***/
+
+@import url('../fonts/roboto.css');
+@import url('plugins/jquery.alerts.css');
+@import url('plugins/uniform.tp.css');
+@import url('plugins/jquery.ui.css');
+@import url('plugins/jquery.ui.autocomplete.css');
+@import url('plugins/fullcalendar.css');
+@import url('plugins/colorbox.css');
+@import url('plugins/colorpicker.css');
+@import url('plugins/jquery.jgrowl.css');
+@import url('plugins/jquery.tagsinput.css');
+@import url('plugins/ui.spinner.css');
+@import url('plugins/jquery.chosen.css');
+
+
+/***** 1. RESET STYLE *****/
+/**************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/***** 2. GENERAL STYLES *****/
+/*****************************/
+
+
+/* body { font-size: 12px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: #666; line-height: 21px; } */
+input, select, textarea, button { font-size: 14px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; outline: none; margin: 0; }
+a { text-decoration: none; color: #666; outline: none; }
+button { outline: none; }
+a img { border: 0; }
+h1,h2,h3,h4,h5, span.h3 { font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif; font-weight: normal; }
+small { font-size: 11px; }
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+
+span.h3 { font-size: 24px; display: block; }
+
+body.withvernav { background: #fff url(../images/line.ccc.png) repeat-y 230px 0; } /* with left menu*/
+body.withmenucoll { background-position: 55px 0; } /* with menu style 1 in collapsed mode */
+body.withmenucoll2 { background-position: 35px 0; } /* with menu style 2 in collapsed mode */
+
+
+/***** 3. COLUMN STYLE *****/
+/***************************/
+
+
+.one_half{ width:48.5%; }
+.one_third{ width:31.16%; }
+.two_third{ width:65.83%; }
+.one_fourth{ width:22.5%; }
+.three_fourth{ width:74.5%; }
+.one_fifth{ width:17.3%; }
+.two_fifth{ width:38.1%; }
+.three_fifth{ width:58.9%; }
+.four_fifth{ width:67.7%; }
+.one_sixth{ width:13.83%; }
+.five_sixth{ width:83.17%; }
+
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,
+.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:3%; float:left; }
+
+.last{ margin-right:0 !important; clear:right; }
+
+
+/***** 19. STANDARD TABLES STYLES *****/
+/**************************************/
+
+
+.stdtable { width: 100%; }
+.stdtable .con0 { background: #fff; }
+.stdtable .con1 { background: #fcfcfc; }
+.stdtable th, .stdtable td { line-height: 21px; vertical-align: middle; color: #333; }
+.stdtable thead th, .stdtable thead td {
+	padding: 7px 10px; border: 1px solid #ddd; border-left: 0;
+	text-align: left;
+}
+.stdtable tfoot th, .stdtable tfoot td { padding: 7px 10px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; text-align: left; }
+.stdtable thead th:first-child, .stdtable tfoot th:first-child,
+.stdtable thead td:first-child, .stdtable tfoot td:first-child { border-left: 1px solid #ddd; }
+.stdtable thead th.head0, .stdtable tfoot th.head0, .stdtable thead td.head0, .stdtable tfoot td.head0 { background-color: #fcfcfc; }
+.stdtable thead th.head1, .stdtable tfoot th.head1, .stdtable thead td.head1, .stdtable tfoot td.head1 { background-color: #f7f7f7; }
+.stdtable thead th.sorting {
+	background-image: url(../images/sort_both.png); background-repeat: no-repeat; background-position: right center; }
+.stdtable thead th:first-child.sorting {
+	background-image: none !important; }
+.stdtable thead th.sorting_asc {
+	background-image: url(../images/sort_asc.png); background-repeat: no-repeat; background-position: right 9px; }
+ .stdtable thead th:first-child.sorting_asc {background-image: none !important;  background-repeat: no-repeat; background-position: right 9px; }
+.stdtable thead th.sorting_desc  {
+	background-image: url(../images/sort_desc.png); background-repeat: no-repeat; background-position: right 9px; }
+.stdtable thead th:first-child.sorting_desc  {background-image: none !important; background-repeat: no-repeat; background-position: right 9px; }
+.stdtable thead th.nosort { background-image: none !important; }
+.stdtable thead td { font-weight: bold; }
+.stdtable thead td.center { text-align: center; }
+.stdtable tbody tr td { padding: 8px 10px; border-right: 1px solid #eee; border-bottom: 1px solid #eee; color: #666; }
+.stdtable tbody tr:last-child td { border-bottom: 1px solid #ddd; }
+.stdtable tbody tr td:first-child { border-left: 1px solid #ddd; }
+.stdtable tbody tr td:last-child { border-right: 1px solid #ddd; }
+.stdtable tbody tr.togglerow td { background: #fff; padding: 15px; }
+.stdtable tbody tr.togglerow:hover td { background: #fff; }
+.stdtable tbody tr.hiderow { display: none; }
+.stdtable .actions { text-align: center; }
+.stdtable .actions a { display: inline-block; margin-left: 5px; border-left: 1px solid #ccc; padding-left: 5px; }
+.stdtable .actions a:first-child { border-left: 0; margin-left: 0; }
+.stdtable .actions a:hover { color: #1785dd; }
+.stdtable a.title { font-weight: bold; color: #32415a; }
+.stdtable a.title:hover { color: #1785dd; }
+
+.tableoptions {
+	background: #fcfcfc; border: 1px solid #ddd; border-bottom: 0; padding: 8px;
+	-moz-border-radius: 0 1px 0 #fff; -webkit-border-radius: 0 1px 0 #fff; border-radius: 0 1px 0 #fff;
+}
+.tableoptions button {
+	background: #fcfcfc; font-size: 11px; color: #666; padding: 7px 10px; border: 1px solid #ccc; margin: 0; outline: none;
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+}
+.tableoptions button:hover { background: #eee; cursor: pointer; }
+.tableoptions select {
+	background: #fff; padding: 6px 5px 7px 5px; border: 1px solid #ccc; margin: 0; outline: none; font-size: 11px; color: #666;
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+}
+
+.dataTables_wrapper { position: relative; }
+.dataTables_length { background: #fcfcfc; border: 1px solid #ddd; border-bottom: 0; padding: 8px; }
+.dataTables_paginate { background: #fcfcfc; border: 1px solid #ddd; border-top: 0; padding: 8px; }
+.dataTables_length, .dataTables_paginate { -moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff; }
+.dataTables_wrapper select {
+	background: #fff; padding: 5px; border: 1px solid #bbb; margin: 0; outline: none; font-size: 11px; color: #666;
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; margin: 0 5px;
+}
+.dataTables_wrapper input { border: 1px solid #ddd; padding: 7px 5px 8px 5px; width: 200px; background: #fff; }
+.dataTables_filter { position: absolute; top: 7px; right: 8px; }
+.dataTables_info { position: absolute; bottom: 13px; left: 8px; }
+.dataTables_paginate { text-align: right; line-height: 16px; }
+.dataTables_paginate span { display: inline-block; }
+.dataTables_paginate .paginate_button {
+	border: 1px solid #ccc; padding: 5px 7px; margin-left: 5px; font-weight: bold; background: #fcfcfc;
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;  font-size: 11px;
+	-moz-box-shadow: 1px 1px 2px #ddd; -webkit-box-shadow: 1px 1px 2px #ddd; box-shadow: 1px 1px 2px #ddd;
+}
+.dataTables_paginate .paginate_active {
+	border: 1px solid #F0882C; background: #F0882C;  color: #fff; padding: 5px 7px; margin-left: 5px; font-weight: bold;
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; font-size: 11px;
+}
+.dataTables_paginate .paginate_button:hover { background: #ddd; border: 1px solid #ccc; cursor: pointer; color: #333; }
+
+
+/***** 20. STANDARD FORM STYLES *****/
+/************************************/
+
+

@@ -1,0 +1,96 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-22 14:28:45
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-19 13:36:14
+*/
+body{position:relative;}
+ol, ul ,li{list-style: none;}
+select{margin-bottom:0;}
+.hide{display:none;}
+.left{float: left;}
+.btn-group button a{color:#fff;}
+.black_overlay{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.4; opacity:.40; filter: alpha(opacity=40); }
+.Popup_unfreeze,.Popup_kick_out,.add_roles,.redact,.Popup_VIP,.Popup_data,.chooseDate,.phonePreview{ display: none; position: absolute; bottom: 30%; left: 40%; z-index:1002; overflow: auto; background: #ddd; text-align: center; border-radius: 5px;width:350px;height:auto;}
+.Popup_unfreeze li{ margin:20px; font-size:1.5em; }
+.Popup_unfreeze li button{ font-size:16px; margin:10px; }
+.text_box{width:50%;margin:0 auto;padding:80px;color:#666;}
+.text_box p{display: inline-block;font-size: 20px;box-sizing: border-box;}
+.text_box p.first{width:45%;text-align: right;line-height: 60px;padding-right: 50px;}
+.text_box button{margin-left:50px;}
+.portlet-title{height:25px;}
+.portlet-body .nav-tabs{margin-right: 0;}
+.portlet-body .nav-tabs>li{float: left;padding:0 20px;}
+.portlet-body .nav-tabs>li>a{font-size: 18px;color:#fff;}
+.portlet-body .nav-tabs>li>a:hover{color:#555;}
+.portlet-body .upload_box{padding-left: 80px;}
+.portlet-body .hotBox{display:none;}
+.pictureBox2,.pictureBox3{display: none;}
+.portlet-body .tags .controls .search-field input{height:30px;}
+.portlet-body .tags .controls .chzn-drop{font-size:16px;}
+.portlet-body .tags .controls .search-choice{font-size:16px !important;;line-height:16px;margin:8px 0 3px 10px;padding:5px 20px 5px 10px;}
+.portlet-tabs .sideshowBox{margin-top: 10px !important;}
+.activity .control-label{margin-top:0;}
+.activity .control-label select{width:80px !important;height:25px !important;}
+.activity .controls input{width:350px !important;padding-right: 18px !important;}
+.activity .controls i.close{float: none;margin-top:13px;margin-left:-15px;}
+.uesrTicklingText,.phoneQQ,.uesrTicklingImg,.afficheText{width:400px;margin:0 auto;}
+.uesrTicklingText p{height:auto;min-height: 100px;}
+.phoneQQ{box-sizing:border-box;border:1px solid #ddd;text-align:center;margin-top:20px;padding:10px 0;}
+.uesrTicklingImg{margin-top:20px;}
+.uesrTicklingImg img{display:block;width:300px;margin:10px auto;}
+.closeBtn{margin-top:20px;text-align:center;}
+.closeBtn button{width:100px;}
+.progress{background: none;box-shadow:none;}
+.chooseDate{padding:20px 0;}
+.chooseDate label{margin-bottom: 10px;}
+.chooseDate input{width:125px;}
+.chooseDate div.shortcut{text-align:left;padding-left:80px;padding-bottom: 10px;border-bottom: 1px solid #333;}
+.chooseDate div.shortcut p{display: inline-block;width:35%;margin-bottom:10px;box-sizing:border-box;padding-left:20px;margin-right:20px;}
+.chooseDate div.shortcut p:hover{cursor:pointer;}
+.chooseDate div.chooseDateBtn{margin-top:20px;margin-left:5px;}
+.chooseDate div.chooseDateBtn button{margin-right:5px;}
+.phonePreview{padding:30px;width:auto;bottom:10%;}
+.phonePreview .previewChoose{width:200px;text-align:left;margin-right:10px;}
+.phonePreview .previewChoose p{margin-bottom:5px;font-size:16px;}
+.phonePreview .previewChoose li{display: inline-block;float:left;width:90px;margin-bottom:5px;font-size:14px;}
+.phonePreview .previewChoose .radio input[type="radio"]{margin-left:0;}
+.phonePreview .cancel{position:absolute;width:32px;height:32px;right:0;top:0;background:url(../images/X.png) no-repeat;}
+.phonePreview .viewBox{margin-top:20px;background:#fff;}
+#tableMessage tbody .gradeX td .btn{margin-right:5px;}
+#tableMessage tbody .gradeX td img{width:150px;}
+#tableMessage{width:100%;}
+.portlet-body .inf_Box{width:80%;margin:0 auto;padding:50px;color:#999;}
+.portlet-body .inf_Box h1{text-align:center;color:#333;margin-bottom:20px;}
+.portlet-body .inf_Box video,.portlet-body .inf_Box audio{display:block;margin:0 auto;}
+.portlet-body .inf_Box #data-summary{text-align:center;margin:20px 0;}
+.portlet-body .inf_Box p{text-align:center;margin-bottom:20px;}
+.portlet-body .inf_Box .text{width:60%;margin:50px auto;}
+.portlet-body .inf_Box .text p{font-size:16px;}
+.portlet-body .inf_Box .text img{display:block;margin:20px auto;}
+.portlet-body .inf_Box .text h2{font-size:18px;color:#333;margin:25px 0;}
+.portlet-body .inf_Box .text .commentBox{padding-left:25px;}
+.portlet-body .inf_Box .text .commentBox p{margin-bottom:10px;}
+.portlet-body .inf_Box_Btn{background:#D7D7D7;position:fixed;bottom:0;width:86%;text-align:center;padding:20px 0;}
+.portlet-body .inf_Box_Btn .btn{margin-right:20px;}
+.upload_box .tags{margin-bottom:70px;}
+
+.viewBox{padding:10px;color:#999;overflow-y:scroll;}
+.viewBox h1{font-size:1.8em;color:#333;margin-bottom:3%;}
+.viewBox p{font-size:0.9em;}
+.viewBox audio{display:block;margin:10px auto;}
+.viewBox .intro{margin-top:3%;font-size:1.2em;}
+.viewBox .textBox{margin-top:5%;font-size:1.5em;}
+.viewBox .textBox video{width:100%;}
+
+.Search{position:relative;}
+.Search .list{position:absolute;width:210px;height:200px;border:1px solid #999;background:#fff;overflow-y:scroll;display:none;}
+.Search .list .line{cursor: pointer;padding:5px;}
+.Search .list .line:hover{background:#4d90fe;color:#fff;}
+.page_all{margin:0 5px;}
+.portlet-footer{
+    background: #fff;
+}
+.recNum{display:inline-block;margin:0 10px;}
+.all_page{width:43px;height:auto;}
+.activess{background: #fff;border:1px solid #333;outline:none;}

@@ -1,0 +1,15 @@
+body{margin:0;padding:0;}
+.w63{width:63%;}
+.login{background: #444 !important;}
+.loginContainer{background-color: #fff;width: 400px;height:350px;margin: 100px  auto 0;margin-bottom: 0px;padding: 40px;padding-top: 20px;padding-bottom: 15px;}
+.loginContainer>h1{text-align: center;color:#333;letter-spacing:2px;font-weight: normal;}
+.loginContainer>div>div{display: inline-block;width:63%;height:40px;box-sizing: border-box;padding:5px 10px;line-height: 30px;margin-bottom:20px;margin-right:10px;border:1px solid #999;}
+.loginContainer>div>div>input{outline: none;border:none;height:30px;padding:0;line-height:30px;}
+.loginContainer>div>div>span,.loginContainer>div>span{display: inline-block;padding:0;padding-right: 10px;height:30px;line-height:30px;}
+.loginContainer>div>span{color:#f00;font-size: 14px;}
+.loginContainer>div>span.errorts{display: none;}
+.loginContainer>div.pwd{height:25px;line-height:25px;}
+.loginContainer>div>a.forgetPassword{float: right;text-decoration: none;color:#000;}
+.loginContainer>div>a.forgetPassword:hover{text-decoration:underline;color:#f00;}
+.loginContainer>div.denglu{height:40px;line-height:40px;margin-top: 18px;}
+#login{width:80%;margin-left: 10%;height:40px;display: inline-block;line-height: 40px;text-align: center;background:#eee;color:#000;cursor: pointer;}
